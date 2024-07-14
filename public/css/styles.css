@@ -1,0 +1,79 @@
+/* public/css/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.shortened-url {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.shortened-url a {
+    color: #2193b0;
+    text-decoration: none;
+}
+
+.shortened-url a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}

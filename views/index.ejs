@@ -1,0 +1,24 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="/images/logo.png" alt="Logo" class="logo"> -->
+        <h1>URL Shortener</h1>
+        <form action="/shorten" method="post">
+            <label for="longUrl">Enter URL:</label>
+            <input type="text" id="longUrl" name="longUrl" required>
+            <button type="submit">Shorten</button>
+        </form>
+        <% if (shortenedUrl) { %>
+            <div class="shortened-url">
+                Shortened URL: <a href="<%= shortenedUrl %>"><%= shortenedUrl %></a>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
